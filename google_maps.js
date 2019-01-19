@@ -5653,4 +5653,4 @@ google.maps.__gjsload__('visualization', function(_) {
         oh;
     var ff = arguments[0];
     window.google.maps.Load && window.google.maps.Load(Ah);
-}).call(this, {});
+}).call(/*BEGIN CHANGE BY UAS*/ /*this*/ window /*END CHANGE BY UAS*/, {});
