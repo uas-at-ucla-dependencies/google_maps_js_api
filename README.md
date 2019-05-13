@@ -12,6 +12,7 @@ Scripts were downloaded on 12/29/18
 * marker.js
 * onion.js
 * controls.js
+* the rest in any order
 
 **The following were modified from the original version (look for "CHANGE BY UAS"):**
 * google_maps.js
