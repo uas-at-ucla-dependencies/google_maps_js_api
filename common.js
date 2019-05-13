@@ -3967,6 +3967,10 @@ google.maps.__gjsload__('common', function(_) {
     var gq;
     gq = "url(" + _.fm + "openhand_8_8.cur), default";
     _.fq = "url(" + _.fm + "closedhand_8_8.cur), move";
+    // BEGIN CHANGE BY UAS
+    gq = gq.replace(_.fm + "openhand_8_8.cur", require("./google_assets/openhand_8_8.cur"));
+    _.fq = _.fq.replace(_.fm + "closedhand_8_8.cur", require("./google_assets/closedhand_8_8.cur"));
+    // END CHANGE BY UAS
     _.jq.prototype.ra = function(a, b) {
         if (a.$h)
             for (var c = _.jc(this.j, 22), d = {}, e = _.ua(a.$h), f = e.next(); !f.done; d = {

@@ -2662,6 +2662,14 @@ google.maps.__gjsload__('util', function(_) {
     };
     OA = function(a, b, c) {
         _.KA(a.m, function() {
+            // BEGIN CHANGE BY UAS
+            try {
+                let asset = require('./google_assets'+c.replace("https://maps.gstatic.com/mapfiles", ""));
+                c = asset;
+            } catch {
+                console.log("Need asset", c);
+            }
+            // END CHANGE BY UAS
             b.src = c
         })
     };
@@ -2751,6 +2759,14 @@ google.maps.__gjsload__('util', function(_) {
         e && d.Ba.cancel(e)
     };
     ZA = function(a, b, c, d, e) {
+        // BEGIN CHANGE BY UAS
+        try {
+            let asset = require('./google_assets'+b.replace("https://maps.gstatic.com/mapfiles", ""));
+            b = asset;
+        } catch {
+            console.log("Need asset", b);
+        }
+        // END CHANGE BY UAS
         c ? (_.L(e.opacity) && _.tv(a, e.opacity), a.src != b && (a.src = b), _.pe(a, e.size || d), a.D = d, e.j && (a.complete ? e.j(b, a) : a.onload = function() {
             e.j(b, a);
             a.onload = null

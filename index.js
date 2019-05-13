@@ -8,5 +8,4 @@ require('./controls');
 
 require('./infowindow');
 require('./poly');
-require('./stats');
 require('./visualization_impl');
