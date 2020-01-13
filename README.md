@@ -1,6 +1,6 @@
 These files are copied from the Chrome/Electron Developer tools "Network" tab.
 They show up when loading the Google Maps API.
-This allows us to use the Google Maps API offline (which is against Google's Terms of Service. shhh... (i.e. keep this repository private))
+This allows us to use the Google Maps API offline (which is against Google's Terms of Service. shhh... (i.e. keep this repository private... ok it's actually not private rn, but so far no one has noticed. Might as well keep it this way since it makes npm installing easier.))
 
 Scripts were downloaded on 12/29/18 (API v3.35.6)
 
